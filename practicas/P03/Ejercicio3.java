@@ -24,7 +24,7 @@ public class Ejercicio3{
       b = aux;
     }
 
-        for(int i = a; i <= b; i = i + 5){
+        for(int i = a; i <= b; i = i + 5){ 
             numeros = numeros + " " + i;
             suma = suma + i;
         }

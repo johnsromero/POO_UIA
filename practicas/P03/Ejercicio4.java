@@ -18,9 +18,7 @@ public class Ejercicio4{
          System.out.println("\nEl numero que ha introducido es mayor al generado, vuelva a intentarlo.\n");
        }else if (entrada == numero){
           System.out.println("\nFelicidades has acertado el numero generado: " + entrada);
-
        }
      }
 
   }
-}
