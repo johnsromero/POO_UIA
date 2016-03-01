@@ -20,9 +20,10 @@ public class Ejercicio2{
       array[i] = numero;
       }
 
-    for (i = 0; i < elementos; i++) {
+  /*  for (i = 0; i < elementos; i++) {
       System.out.println("Elemento " + (i + 1) + " del arreglo: " + array[i]);
       }
+      */
 
     do {
       System.out.println("\nIngresa un numero entre 0 y 9:");
@@ -36,16 +37,18 @@ public class Ejercicio2{
       }
     }
 
-    if (contador == 0) {
-        System.out.println("\n----No se encontraron numeros en el arreglo con la terminacion: " + num + "----");
-        }
+    System.out.println("\nSe encontro [" +  contador + "] numeros con la terminacion [" + num + "]");
+
+
+
 
     System.out.println();
     for (i=0;i<elementos;i++){
-     if(result[i]!='0'){
-      System.out.println(result[i]);
-       }
+      if(result[i]> 0){
+    System.out.println(result[i]);
+
      }
+   }
 
 }
 }
