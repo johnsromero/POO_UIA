@@ -8,6 +8,7 @@ public class TestDirectorio{
 
 
     Usuario user = new Usuario();
+    DirectorioUsuarios obj = new DirectorioUsuarios();
 
     String inombre = " ", idireccion = " ",imail = " ", inickname = " ", icontrasena = " ", itelefono = " ";
     int idia = 0, imes = 0, ianio =0, i=0;
@@ -60,9 +61,13 @@ public class TestDirectorio{
       }
 
 
+      String nick = "", pass = "";
+      boolean var = obj.Iniciarsesion(nick, pass);
 
-      //Iniciarsesion();
-
-
+      if(var == true){
+        System.out.println("Bienvenido");
+      }else{
+        System.out.println("Nickname o contraseña incorrecta");
+      }
   }
 }

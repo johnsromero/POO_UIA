@@ -1,7 +1,7 @@
 import java.util.*;
 class DirectorioUsuarios{
   private Usuario [] user;
-  private nElementos;
+  private int nElementos;
 
   public DirectorioUsuarios(){
     nElementos = 3;
@@ -10,10 +10,12 @@ class DirectorioUsuarios{
 
 
 
-  public boolean Iniciarsesion(){
-    String nickname, String contrasena;
 
-    Scanner leer = new Scanner(System.in);
+  public boolean Iniciarsesion(String nickname, String contrasena){
+    int i=0;
+      Usuario persona = new Usuario();
+
+    Scanner scan = new Scanner(System.in);
 
     System.out.println("Inicio de sesion:");
 
@@ -22,7 +24,7 @@ class DirectorioUsuarios{
     System.out.println("Contraseña:");
     contrasena = scan.next();
 
-    if(user[i].getNickname() == nickname && user[i].getContrasena() ==contrasena){
+    if(persona.getNickname().equals(nickname) && persona.getContrasena().equals(contrasena)){
       return true;
     }else{
       return false;
